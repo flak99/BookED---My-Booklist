@@ -1,1 +1,8 @@
 Link do strony która będzie sie wyswitlac na GitHUbie https://github.com/flak99/BookED---My-Booklist.git
+
+Lista rzeczy do zrobienia:
+   [] 1. Stworzenie layoutu 
+   [] 2. Stworzenie listy ksiązek wraz z danymi 
+   [] 3. Stowrznie bazy danych w SQLlite 
+   [] 4. Podłaczenie bazy danych do strony 
+   
