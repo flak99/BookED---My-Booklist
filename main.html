@@ -6,6 +6,9 @@
     <title>BookED</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=bookmark" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
    
@@ -59,18 +62,51 @@
         </div>
     </div>
     <div class="main-side">
+
+        <!-- Modal for book's details -->
+        <div class="modal-all">
+            <div class="modal-cont">
+                <div class="m-title m-text-style">Cel Snajpera</div>
+                <div class="m-author m-text-style">Chris Kyle</div>
+                <div class="m-num-page m-text-style"> 456</div>
+                <div class="m-categories m-text-style">Military, Action, Facts</div>
+                <label for="dropdown" class="m-text-style">Folders</label>
+                    <select id="dropdown" name="options">
+                        <option value="option1" class="m-text-style">Option 1</option>
+                        <option value="option2"class="m-text-style">Option 2</option>
+                        <option value="option3"class="m-text-style">Option 3</option>
+                    </select>
+                    <button class="read-notRead m-text-style">Read</button>
+                    <!-- <span class="material-symbols-rounded">bookmark</span> -->
+                    <span class="material-symbols-rounded m-text-style-exit">close</span>
+            </div>
+         </div>
+
         <div class="search-bar-area">
             <div class="search-bar">
                 <input type="search button" class="search-input-bar" placeholder="Search book">
                 <button class="material-symbols-outlined search-icon">search</button>
             </div>
 
-            <div class="books">
-                
-            </div>
         </div>
-        
+
+            <div class="books-container">
+                <div class="book-info-container">
+                    <div class="photo"></div>
+                    <div class="title text-style-b">Cel Snajepra</div>
+                    <div class="author text-style-b">Chris Kyle</div>
+                </div>
+            </div>
+
+            
+            
+
+
+
     </div>
+
+
+
 
 </section>
     
