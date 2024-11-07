@@ -248,6 +248,7 @@
     background-color: #262626;
     width: 50%;
     height: 50vh;
+    z-index: 100;
 }
 
 .left-side-modal{
