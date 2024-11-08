@@ -25,34 +25,31 @@
             <div class="text-style user-id">Krystian Flak</div>
             <hr class="horizontal-label-decoration">
             <div class="side-bar-menu">
-                <h4 onclick="">Categories</h4>
-                    <div class="categories-name">
+                <h4 id="cat-open-btn">Categories</h4>
+                    <div id="categories-name-id" class="categories-name">
                         <ul>
-                            <li>cat1</li>
-                            <li>cat2</li>
-                            <li>cat3</li>
-                            <li>cat4</li>
-                            <li>cat5</li>
+                            <li>Ulubione</li>
+                            <li>Przeczytane</li>
+                            <li>Nieprzeczytane</li>
+                            <li>Militarne</li>
+                            <li>Kryminały</li>
+                            <li>Horrory</li>
+                            <li>Rozwój</li>
                         </ul>
                     </div>
-                    <h4>Folders <button class="add-folder">+</button></h4>
+                    <h4>Folders <button id="add-btn" class="add-folder">+</button></h4>
                     <div class="folders-name">
-                        <ul>
-                            <li>cat1</li>
-                            <li>cat2</li>
-                            <li>cat3</li>
-                            <li>cat4</li>
-                            <li>cat5</li>
+                        <ul class="folders-area">
+                            <!-- Space for new folders -->
                         </ul>
                     </div>
-                <h4>Stats</h4>
-                <div class="stats-name">
+                <h4 id="stat-open-btn">Stats</h4>
+                <div class="stats-name" id="stats-name-id">
                     <ul>
-                        <li>cat1</li>
-                        <li>cat2</li>
-                        <li>cat3</li>
-                        <li>cat4</li>
-                        <li>cat5</li>
+                        <li>Książek: 130</li>
+                        <li>Strony: 4500</li>
+                        <li>Najdłuższa ksążka (stron): 900 </li>
+                        <li>Najkrótsz książka (stron): 45</li>
                     </ul>
                 </div>
                 
@@ -74,7 +71,7 @@
                 </div>
                 <div class="right-side-modal">
                     <!-- <span class="material-symbols-rounded">bookmark</span> -->
-                    <span class="material-symbols-rounded m-text-style-exit">close</span>
+                    <span id="close-modal" class="material-symbols-rounded m-text-style-exit">close</span>
                     <button class="read-notRead m-text-style">Read</button>
                     <button class="read-notRead m-text-style">add to folders</button>
                 </div>

@@ -18,6 +18,9 @@
     overflow-x: hidden;
     scrollbar-width: none;
 }
+.side-bar-menu{
+    margin-left: 1em;
+}
 
 
 .main-side{
@@ -136,12 +139,17 @@
 
 
 /* 1.3 navigation categories */
-
+.categories-name{
+    display: none;
+    animation: OpenCat 0.3s ease;
+   
+}
 .categories-name li{
-    display: flex;
     list-style: none;
     margin-top: 0.3em;
 }
+
+
 
 .folders-name li{
     display: flex;
@@ -167,9 +175,20 @@
     border: solid 1px #c9c9c8;
     cursor: pointer;
 }
-.stats-name li{
+.stats-name{
     display: flex;
-    list-style: none;
+    justify-content: center;
+    align-items: center;
+    animation: OpenCat 0.3s ease;
+   
+}
+@keyframes OpenCat {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+.stats-name li{
+    list-style:square;
     margin-top: 0.3em;
 }
 
@@ -203,7 +222,7 @@
 
 .book-info-container:hover{
     background-color: #3D3D3B;
-    transform: scale(1.02);
+    transform: scale(1.01);
     
 }
 .photo{
@@ -240,7 +259,26 @@
     width: 80%;
     height: 100vh;
     backdrop-filter: blur(2px);
+    z-index: 10;
+ 
 }
+.modal-all-enter{
+    display: flex;
+    visibility: visible;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    animation: OpenModal 0.5s ease-in-out;
+}
+
+@keyframes OpenModal {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
 .modal-cont{
     display: flex;
     justify-content: center;
